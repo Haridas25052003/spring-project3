@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 public class Student {
 	
 	private int id;
+	
 	private String name;
 	private String city;
 	private double percentage;
@@ -14,6 +15,13 @@ public class Student {
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", percentage=" + percentage + ", address="
 				+ address + "]";
+	}
+	
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 	public int getId() {
 		return id;
