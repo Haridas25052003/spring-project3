@@ -10,6 +10,7 @@ public class Student {
 	private String name;
 	private String city;
 	private double percentage;
+	//@Autowired
 	private Address address;
 	@Override
 	public String toString() {
