@@ -3,12 +3,21 @@ package com.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.model.Student;
+
 @Configuration
 public class MyConfiguration {
 	
 	   @Bean
-       public void m1() {
+       public Student m1() {
+		   Student s=new Student();
+		   s.setId(10);
+		   s.setName("haridas");
+		   s.setCity("hingoli");
+		   s.setPercentage(86.90);
     	   System.out.println("m1 method called");
+    	   
+    	   return s;
        }
 
 	   @Bean
