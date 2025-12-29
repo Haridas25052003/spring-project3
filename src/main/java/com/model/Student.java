@@ -9,9 +9,11 @@ public class Student {
 	private String name;
 	private String city;
 	private double percentage;
+	private Address address;
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", percentage=" + percentage + "]";
+		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", percentage=" + percentage + ", address="
+				+ address + "]";
 	}
 	public int getId() {
 		return id;
